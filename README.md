@@ -9,3 +9,6 @@ Open two terminal in Github Codespaces. The first terminal will be used to bring
 Step 1: Run `docker compose up` in the first terminal. Wait for it to complete. The gin server should come up.
 
 Step 2: Run `bash scripts\parallel_n.sh` in the second terminal. The response can be watched in the first terminal.
+
+### Stress Test Output (22/5/23)
+![image](https://github.com/shukra-in-spirit/haste-scheduler/assets/104008671/2258285d-613e-4c87-a910-d2b948ee99dc)
