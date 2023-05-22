@@ -12,3 +12,6 @@ Step 2: Run `bash scripts\parallel_n.sh` in the second terminal. The response ca
 
 ### Stress Test Output (22/5/23)
 ![image](https://github.com/shukra-in-spirit/haste-scheduler/assets/104008671/2258285d-613e-4c87-a910-d2b948ee99dc)
+
+Current Accuracy is at below 1 second error on 128m memory and 100m cpu for service pod.
+Redis configuration: 256m memory, 300m cpu
