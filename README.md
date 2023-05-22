@@ -6,5 +6,6 @@ An alarm service allows users or other services to persist `Alarm Item(s)` as ti
 Open two terminal in Github Codespaces. The first terminal will be used to bring up the Haste service and the redis service. The second one is used to stress test the Haste service.
 
 
-Step 1: Run `docker compose up`. </n>
+Step 1: Run `docker compose up`.
+
 Step 2: Run `bash scripts\parallel_n.sh`.
