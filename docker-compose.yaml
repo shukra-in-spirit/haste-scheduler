@@ -1,13 +1,21 @@
 version: '3.8'
 services:
-  cache:
+  haste:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - redis
+  redis:
     image: redis:6.2-alpine
     restart: always
     ports:
       - '6379:6379'
     command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
     volumes:
-      - cache:/data
+      - redis:/data
 volumes:
-  cache:
+  redis:
     driver: local
